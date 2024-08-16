@@ -1,0 +1,29 @@
+{
+  "xsappname": "sapbtpdslui5",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+    "name": "$XSAPPNAME.Display",
+    "description": "Display the app as Platform or Business User"
+    }
+  ],
+  "role-templates": [
+    {
+    "name": "DSLUI5DisplayRole",
+    "description": "DSL UI5 Display Role Template",
+    "scope-references": [
+        "$XSAPPNAME.Display"
+    ]
+    }
+  ],
+  "role-collections": [
+        {
+        "name": "DSLUI5DisplayRoleCollection",
+        "description": "DSL UI5 Display Role Collection",
+        "role-template-references": [
+        "$XSAPPNAME.DSLUI5DisplayRole"
+            ]
+        }
+    ]
+}
