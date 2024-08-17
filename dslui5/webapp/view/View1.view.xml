@@ -3,7 +3,7 @@
         <content>
          <FlexBox direction="Row" alignItems="Center" class="sapUiTinyMarginBottom" id="Flexbox0">
            <Text text="Accept this button" class="sapUiTinyMarginEnd" id="Text0"/>
-           <Button xmlns="sap.m" text="Click Please" id="Button0" press=".onPress" activeIcon="sap-icon://action"/>
+           <Button xmlns="sap.m" text="Click Please" id="Button0" press=".onPress"/>
          </FlexBox>
         </content>
     </Page>
